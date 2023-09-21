@@ -6,17 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
+  title = 'angularEjemplo';
 
-  apellido = 'Gomez';
+  // apellido = 'Gomez';
 
-  duplicarNumero(valor:number):number{
-    return valor*2;
-  }
-  pelicula={
-    titulo:'Spiderman',
-    fechaLanzamiento:new Date(),
-    precio: 75.56,
-  }
-
+  // duplicarNumero(valor:number):number{
+  //   return valor*2;
+  // }
+  // pelicula={
+  //   titulo:'Spiderman',
+  //   fechaLanzamiento:new Date(),
+  //   precio: 75.56,
+  // }
+  
 }
