@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductoFilterPipe } from './product/producto-filter.pipe';
 import { OperasBasComponent } from './formularios/operas-bas/operas-bas.component';
+import { CalculosComponent } from './formularios/calculos/calculos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductoFilterPipe,
-    OperasBasComponent
+    OperasBasComponent,
+    CalculosComponent
   ],
 
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
 
   providers: [],

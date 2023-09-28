@@ -11,29 +11,25 @@
 
 
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="suma" id="flexRadioDefault1" value="{{operacion}}">
-            {{operacion === 'sumar'}}
-            <label class="form-check-label" for="sumar">Sumar</label>
+            <!-- ngModel asigna el valor value a la variable indicada -->
+            <input class="form-check-input" [(ngModel)]='funcion' type="radio" name="suma" id="flexRadioDefault1" value="suma">
+            <label class="form-check-label" for="suma">Sumar</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="resta" id="flexRadioDefault2" value="{{operacion}}">
-            {{operacion === 'restar'}}
+            <input class="form-check-input" [(ngModel)]='funcion' type="radio" name="resta" id="flexRadioDefault2" value="resta">
             <label class="form-check-label" for="restar">Restar</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="multiplicar" id="flexRadioDefault3" value="{{operacion}}">
-            {{operacion === 'multi'}}
+            <input class="form-check-input" [(ngModel)]='funcion' type="radio" name="multiplicar" id="flexRadioDefault3" value="multi">
             <label class="form-check-label" for="multiplicar">Multiplicar</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="dividir" id="flexRadioDefault4" value="{{operacion}}">
-            {{operacion === 'divi'}}
+            <input class="form-check-input" [(ngModel)]='funcion' type="radio" name="dividir" id="flexRadioDefault4" value="divi">
             <label class="form-check-label" for="dividir">Dividir</label>
         </div>
 
-
         <div class="mb-3">
-            <button (click)="" class="btn btn-primary">Calcular</button>
+            <button (click)="calcular()" class="btn btn-primary">Calcular</button>
         </div>
     </div>
     <div class="col-6">
